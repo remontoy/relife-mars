@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReLife — Mars Circular Farm (Foam → Farm, Plastic → Filament)</title>
+  <meta name="description" content="Team ReLife turns post‑landing materials into life‑support hardware: foam packaging becomes modular hydroponics; plastic films become 3D‑printing filament." />
+  <meta property="og:title" content="ReLife — Mars Circular Farm" />
+  <meta property="og:description" content="Foam → Farm. Plastic → Filament. A practical circular pathway for Mars operations." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b3d91" />
+  <style>
+    :root{
+      --bg:#0b1220; --panel:#0f1730; --ink:#e6ecff; --muted:#b2c1ff; --brand:#7ac7ff; --accent:#4df3a3;
+      --card:#121b39; --line:#1e2a58;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,var(--bg),#0b1430);color:var(--ink);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:auto;padding:24px}
+    header.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(1200px 600px at 100% -10%,#15214a00 20%,#15214a 60%),linear-gradient(180deg,#0b1430 0%, #0d1840 60%, #0b1430 100%)}
+    .hero .inner{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:64px 24px}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 12px}
+    .tag{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:var(--muted);font-weight:600;letter-spacing:.3px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{border-radius:12px;padding:10px 14px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+    .btn.primary{background:linear-gradient(180deg,#1d2a5b,#15214a);border-color:#2d3b7d}
+    .btn:outline{background:transparent}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    h2{font-size:clamp(22px,3vw,30px);margin:6px 0 10px}
+    h3{font-size:18px;margin:6px 0 4px;color:var(--brand)}
+    section{padding:28px 0}
+    .grid{display:grid;gap:16px}
+    .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .muted{color:var(--muted)}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    footer{border-top:1px solid var(--line);padding:28px 24px;color:var(--muted);font-size:14px}
+    nav.top{display:flex;gap:18px;flex-wrap:wrap;margin:8px 0 0}
+    nav.top a{opacity:.9}
+    code.inline{background:#0c1a3b;border:1px solid #1e2a58;border-radius:6px;padding:0 6px}
+    @media (max-width:860px){.hero .inner{grid-template-columns:1fr}.cols-2,.cols-3{grid-template-columns:1fr}}
+    @media print{header,nav,.cta,footer{display:none} body{background:#fff;color:#000} .card{border-color:#ddd}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap inner">
+      <div>
+        <span class="tag">Team ReLife · Space Apps</span>
+        <h1>ReLife — Foam → Farm, Plastic → Filament</h1>
+        <p class="muted">We turn post‑landing materials into life‑support hardware. Foam packaging becomes modular hydroponics. Plastic films become 3D‑printing filament. A clear, scalable path to circular operations on Mars.</p>
+        <div class="cta">
+          <a class="btn primary" href="#details">View Project Details</a>
+          <button class="btn" onclick="window.print()">Print / Save PDF</button>
+          <a class="btn" href="#links">Links</a>
+        </div>
+        <nav class="top">
+          <a href="#details">Details</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#impact">Impact</a>
+          <a href="#tools">Stack</a>
+          <a href="#creative">Creative</a>
+          <a href="#factors">Factors</a>
+          <a href="#celebrations">Celebrations</a>
+          <a href="#resources">Resources</a>
+          <a href="#summary">Summary</a>
+        </nav>
+      </div>
+      <div class="card">
+        <h3>At‑a‑glance workflow</h3>
+        <ol class="muted" style="margin:8px 0 0 18px">
+          <li>Sort</li>
+          <li>Light sterilize</li>
+          <li>Thermally compact / laminate</li>
+          <li>Shred</li>
+          <li>Extrude</li>
+          <li>Print</li>
+          <li>Assemble</li>
+        </ol>
+        <p class="muted" style="margin-top:12px">Low crew time · Minimal water · Contained particles · No burning</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="details">
+      <h2>What it does & how it works</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Foam to Farm</h3>
+          <p>We convert clean foam packaging into modular plant‑growth structures. Laminated foam panels are cut into trays, raft boards, channel spacers, and vertical frames. Panels are lined with monomaterial food‑wrap films from packaging to create a safe barrier between nutrient solution and foam. Printed joints and clamps snap panels onto the repurposed transport cube, which becomes the <strong>FabRack</strong> for hydroponics. The same rack holds pumps, tubing, and sensors, with the foam also serving as vibration and thermal insulation.</p>
+        </div>
+        <div class="card">
+          <h3>Plastic to Filament</h3>
+          <p>All suitable plastic films and wraps are pressed, shredded, filtered, and extruded into filament. We print connectors, net‑pot collars, manifold brackets, hose clips, elbows, organizers, and storage boxes that support the farm and daily habitat needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <h2>Benefits</h2>
+      <div class="grid cols-3">
+        <div class="card"><ul>
+          <li>Food infrastructure without new shipped hardware</li>
+          <li>Lower waste volume and stowage</li>
+          <li>Parts on demand with on‑site fabrication</li>
+        </ul></div>
+        <div class="card"><ul>
+          <li>Reuses process heat to pre‑warm nutrient solution / seed trays</li>
+          <li>Low crew time and minimal water use</li>
+          <li>Closed particle handling; no burning</li>
+        </ul></div>
+        <div class="card"><ul>
+          <li>Greens interior spaces, improving well‑being</li>
+          <li>Stabilizes spares via printable components</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="impact">
+      <h2>Intended impact</h2>
+      <div class="card">
+        <p>A practical circular pathway that turns two abundant waste streams into life‑support assets at Jezero. It reduces logistics mass and volume, stabilizes spares through on‑site fabrication, and improves crew well‑being by greening interior spaces.</p>
+      </div>
+    </section>
+
+    <section id="tools">
+      <h2>Tools, coding languages, hardware & software</h2>
+      <div class="card">
+        <ul>
+          <li><strong>CAD</strong>: Fusion 360 or Onshape; parametric parts in OpenSCAD; slicing with Cura or PrusaSlicer.</li>
+          <li><strong>Analysis</strong>: Quick material balance & sizing in Python notebooks.</li>
+          <li><strong>Hardware</strong>: Compact shredder; small filament extruder with diameter sensing; FFF 3D printer; heated press/plates for lamination; hand tools; simple bins or CTBs for segregation and tracking.</li>
+          <li><strong>Controls (optional)</strong>: Microcontroller interlocks for temperature & safety.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="creative">
+      <h2>What makes it creative</h2>
+      <div class="card">
+        <p>Foam packaging becomes the backbone of a hydroponic rig, lined with reclaimed films for safety and durability. The transport cube is not waste but a zero‑extra‑mass workbench. One waste stream feeds another: plastic films become filament that prints the very joints that hold the farm together.</p>
+      </div>
+    </section>
+
+    <section id="factors">
+      <h2>Factors considered</h2>
+      <div class="card">
+        <ul>
+          <li>Food safety via film liners & easy‑to‑clean surfaces</li>
+          <li>Segregation of bio‑contact textiles</li>
+          <li>Dust & particle control during shredding</li>
+          <li>Low water use via recirculation</li>
+          <li>Reuse of process heat</li>
+          <li>Maintenance & cleaning of tools</li>
+          <li>Simple QC for filament diameter</li>
+          <li>Traceability of recycled lots</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="summary">
+      <h2>Team ReLife: Summary</h2>
+      <div class="card">
+        <p>ReLife turns post‑landing materials into life‑support hardware. We focus on two streams at Jezero: foam packaging and plastic films. Foam becomes modular plant‑growth structures: laminated trays, channel spacers, and vertical frames lined with reclaimed food films, mounted on the repurposed transport cube as a FabRack for hydroponics. Plastic films are pressed, shredded, and extruded into filament to 3D print the joints, clips, and organizers that hold the farm and daily tools together.</p>
+        <p>The workflow is straightforward: sort, light sterilize, thermally compact or laminate, extrude, print, and assemble. It runs with little crew time, uses very little water, contains particles, and avoids burning. The payoff is smaller waste volume, fewer shipped spares, and a steadier supply of useful parts, while greenery improves crew well‑being. ReLife is a clear, scalable path to circular operations on Mars.</p>
+      </div></section>
+
+    <section id="celebrations">
+      <h2>Cosmic Celebrations — Waste → Birthday Items</h2>
+      <div class="card">
+        <p>This table specifies exactly how each waste stream is converted into a specific, reusable celebration item, with process steps, water use minimization, reused outputs, and crew time estimates.</p>
+        <div style="overflow:auto">
+          <table style="width:100%; border-collapse:collapse; font-size:14px">
+            <thead>
+              <tr>
+                <th style="border-bottom:1px solid var(--line); text-align:left; padding:8px">Waste material (sub‑type)</th>
+                <th style="border-bottom:1px solid var(--line); text-align:left; padding:8px">Pre‑process (water)</th>
+                <th style="border-bottom:1px solid var(--line); text-align:left; padding:8px">Conversion steps & tools</th>
+                <th style="border-bottom:1px solid var(--line); text-align:left; padding:8px">Add‑ons (printed/other)</th>
+                <th style="border-bottom:1px solid var(--line); text-align:left; padding:8px">Final party item (spec)</th>
+                <th style="border-bottom:1px solid var(--line); text-align:left; padding:8px">Reused outputs</th>
+                <th style="border-bottom:1px solid var(--line); text-align:left; padding:8px">Crew time*</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:8px">Rehydratable food pouches (PET/Al/PE multilayer)</td>
+                <td style="padding:8px">Slit & squeegee; closed‑loop mist rinse ≤100 mL/pouch; wipe with scraper; dry using waste heat</td>
+                <td style="padding:8px">Cross‑cut to open → flatten → template cut; edge‑seal with heated wheel (≈180 °C, 2 m/min); punch eyelets</td>
+                <td style="padding:8px">Printed PE/PET grommets; braided textile cord</td>
+                <td style="padding:8px">Triangular bunting flags 180×220 mm (set of 12)</td>
+                <td style="padding:8px">Extruder barrel heat → drying rack air‑duct</td>
+                <td style="padding:8px">~2–3 min/flag</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Drink pouches with spout (HDPE cap + laminate body)</td>
+                <td style="padding:8px">As above; remove caps, rinse threads with ≤50 mL</td>
+                <td style="padding:8px">Body: cone template; seam via thermal tape; cap reused as topper</td>
+                <td style="padding:8px">Printed buckle ring; elastic from clean nitrile bands</td>
+                <td style="padding:8px">Reusable party hats, Ø200 mm base, headband adjustable</td>
+                <td style="padding:8px">Drying with lamination plate residual heat</td>
+                <td style="padding:8px">~4 min/hat</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Thermal food pouches (polyester/nylon + foil)</td>
+                <td style="padding:8px">Slit, scrape residues; mist rinse ≤120 mL; dry with waste heat</td>
+                <td style="padding:8px">Flat pattern cut; fold; stitch or thermal weld; edge bind</td>
+                <td style="padding:8px">Printed size clips; nylon thread from EVA webbing</td>
+                <td style="padding:8px">Insulated bottle sleeves Ø70×180 mm (not food‑contact)</td>
+                <td style="padding:8px">Heated‑press waste heat for pre‑warm</td>
+                <td style="padding:8px">~6 min/sleeve</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Overwrap films (mono‑PE / mono‑PP only)</td>
+                <td style="padding:8px">Closed‑loop rinse; dry at 50–60 °C</td>
+                <td style="padding:8px">Shred 5–8 mm → dry → extrude 1.75 mm filament (diameter sensor) → FFF print</td>
+                <td style="padding:8px">—</td>
+                <td style="padding:8px">Letter tiles (A–Z), sign bases, clips, grommets</td>
+                <td style="padding:8px">Extruder waste heat reclaimed to rinse pre‑heater</td>
+                <td style="padding:8px">~10 min/print (small)</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Bubble wrap & air cushions (PE)</td>
+                <td style="padding:8px">Wipe only; keep sealed to avoid leaks</td>
+                <td style="padding:8px">Laminate between two overwrap sheets (120–130 °C) to make panels</td>
+                <td style="padding:8px">Printed panel clips</td>
+                <td style="padding:8px">Translucent backdrop panels 400×600 mm</td>
+                <td style="padding:8px">Press residual heat dries wipe‑down</td>
+                <td style="padding:8px">~3 min/panel</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Clean textiles (cotton/poly)</td>
+                <td style="padding:8px">Machine wash in closed‑loop; spin dry; warm‑air finish</td>
+                <td style="padding:8px">Cut & hem edges; braid cords</td>
+                <td style="padding:8px">Printed cord end‑caps; QR labels</td>
+                <td style="padding:8px">Table runner 300×1000 mm; bunting cord 3 mm; gift bags 180×260 mm</td>
+                <td style="padding:8px">Drying with extruder/press waste heat</td>
+                <td style="padding:8px">~8 min/bag; ~6 min/runner</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">EVA/CTB webbing (Nomex/nylon)</td>
+                <td style="padding:8px">Wipe; no rinse unless contaminated</td>
+                <td style="padding:8px">Cut, heat‑seal ends; punch; assemble straps</td>
+                <td style="padding:8px">Printed buckles & hooks</td>
+                <td style="padding:8px">Hanging straps for banners/backdrops</td>
+                <td style="padding:8px">—</td>
+                <td style="padding:8px">~2 min/strap</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Structural aluminum/composites (off‑cuts)</td>
+                <td style="padding:8px">Dry wipe; deburr</td>
+                <td style="padding:8px">Cut to 300–600 mm posts; assemble frame</td>
+                <td style="padding:8px">Printed corner blocks; bases filled with regolith</td>
+                <td style="padding:8px">Backdrop frame (modular)</td>
+                <td style="padding:8px">Regolith as sealed ballast fill</td>
+                <td style="padding:8px">~12 min/frame</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Foam packaging (Plastazote / Zotek F30)</td>
+                <td style="padding:8px">Air blow‑off; no rinse</td>
+                <td style="padding:8px">Laminate skin film; CNC/knife cut letters; edge‑seal</td>
+                <td style="padding:8px">Printed standoffs & mounts</td>
+                <td style="padding:8px">Signboard cores 300×200×10 mm; 3D letters</td>
+                <td style="padding:8px">Lamination heat reused</td>
+                <td style="padding:8px">~5 min/sign</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Nitrile gloves (clean, non bio‑contact)</td>
+                <td style="padding:8px">Wipe; inspect</td>
+                <td style="padding:8px">Cut 8 mm elastic bands</td>
+                <td style="padding:8px">—</td>
+                <td style="padding:8px">Hat straps; cable ties (non‑food)</td>
+                <td style="padding:8px">—</td>
+                <td style="padding:8px">~30 s/band</td>
+              </tr>
+              <tr>
+                <td style="padding:8px">Anti‑static bubble bags (pink PE)</td>
+                <td style="padding:8px">Wipe; avoid skin‑long contact</td>
+                <td style="padding:8px">Laminate into sleeves; label non‑food</td>
+                <td style="padding:8px">Printed sleeves & clips</td>
+                <td style="padding:8px">Lighting diffusers / prop sleeves (non‑food)</td>
+                <td style="padding:8px">—</td>
+                <td style="padding:8px">~3 min/sleeve</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted" style="margin-top:8px">*Crew time is hands‑on time per unit under nominal operation; most steps run semi‑automated. Water use is contained in a 2–5 L closed loop with staged filtration (500 µm → 100 µm → 5 µm) and capture of fines; no discharge.</p>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>Resources & Safety Compliance</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Electricity</strong>: Assumed continuous per brief; no separate generation/storage included.</li>
+          <li><strong>Water minimization</strong>: Squeegee + mist rinse; closed‑loop wash with staged filters; warm‑air drying via reclaimed waste heat.</li>
+          <li><strong>Reuse of outputs</strong>: Extruder/press waste heat ducted to drying rack / rinse pre‑heater; warm rinse used to pre‑heat lamination plates via simple heat‑exchanger coil.</li>
+          <li><strong>Crew time</strong>: Semi‑automatic pouch slitter‑flattener; quick‑change cutting dies; standardized jigs; QR checklists; batch processing.</li>
+          <li><strong>Regolith (MGS‑1)</strong>: Used as sealed ballast in printed bases; optional pigment in fully encapsulated parts (no loose dust).</li>
+          <li><strong>No burning/incineration</strong>; <strong>PFAS & toxics</strong>: Exclude fluorinated grease‑resistant wrappers; process only known mono‑PE/PP/PET streams for extrusion. Multi‑layer foil pouches are used as sheets only.</li>
+          <li><strong>Microplastics</strong>: Edges thermal‑sealed; closed‑loop filtration captures fines; filters disposed as sealed solid waste. No wastewater discharge.</li>
+          <li><strong>Food safety</strong>: Celebration items avoid direct food contact unless lined with known food‑grade mono‑film; all food‑contact doubtful items tagged <em>non‑food</em>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Public repo</h3>
+          <p class="muted">(Update after publish)</p>
+          <p><a href="#" id="repoLink">https://github.com/&lt;org-or-user&gt;/relife-mars</a></p>
+        </div>
+        <div class="card">
+          <h3>Demo video</h3>
+          <p class="muted">(Optional; link your YouTube unlisted video)</p>
+          <p><a href="#" id="videoLink">https://youtu.be/&lt;your-demo-id&gt;</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>© Team ReLife — NASA Space Apps Challenge. This page is a single static file for easy public hosting (GitHub Pages, Netlify, Vercel, etc.).</div>
+      <div style="margin-top:6px">Built with plain HTML/CSS for reliability in low‑bandwidth review contexts.</div>
+    </div>
+  </footer>
+
+  <script>
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1); if(!id) return;
+        const el=document.getElementById(id); if(!el) return;
+        e.preventDefault(); el.scrollIntoView({behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
